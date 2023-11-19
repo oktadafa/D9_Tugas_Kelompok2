@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,21 +17,50 @@ header {
 
 /* Stil navbar saat di-scroll */
 header.scrolled {
-  background-color: rgba(0, 74, 135, 0.1); /* Ganti dengan warna atau efek blur yang diinginkan */
+  background-color: rgba(
+    0,
+    74,
+    135,
+    0.1
+  ); /* Ganti dengan warna atau efek blur yang diinginkan */
   backdrop-filter: blur(10px); /* Ganti dengan tingkat blur yang diinginkan */
 }
-
 .navbar-nav .nav-link {
   color: black;
   font-size: 20px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 18px;
   font-weight: 700;
+  position: relative;
 }
-.navbar-nav .nav-link:hover {
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #004a87;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+  width: 100%;
+  /* Ganti dengan kode warna teks saat dihover yang diinginkan */
+}
+
+.navbar-nav .first-navbar::before {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+  background-color: #004a87;
+}
+
+.navbar-nav .first-navbar {
   color: #004a87;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 5px solid rgb(0, 74, 135); /* Ganti dengan kode warna teks saat dihover yang diinginkan */
+  position: relative;
 }
 /* .navbar-nav .first-navbar{
   color: #004a87;
@@ -42,7 +71,7 @@ header.scrolled {
 .footer-about h5 {
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .footer-link h6 {
   text-transform: uppercase;
@@ -53,7 +82,7 @@ header.scrolled {
 }
 .footer-widget ul li {
   list-style-type: none;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .footer-widget li {
   margin-bottom: 20px;
@@ -62,7 +91,7 @@ header.scrolled {
   text-decoration: none;
   color: black;
   font-size: 16px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 500;
 }
 .footer-widget a:hover {
@@ -83,7 +112,7 @@ header.scrolled {
 .footer-copyright-text {
   background-color: #004a87;
   padding: 20px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: white;
 }
 
@@ -104,7 +133,12 @@ header.scrolled {
   height: 520px;
 }
 .carousel-caption {
-  background-color: rgba(8, 8, 8, 0.3); /* Warna gelap dengan tingkat transparansi 0.5 (sesuaikan dengan preferensi Anda) */
+  background-color: rgba(
+    8,
+    8,
+    8,
+    0.3
+  ); /* Warna gelap dengan tingkat transparansi 0.5 (sesuaikan dengan preferensi Anda) */
   backdrop-filter: blur(4px); /* Efek blur, sesuaikan dengan keinginan Anda */
   padding: 5px;
 }
@@ -119,11 +153,11 @@ header.scrolled {
 .nav-item .nav-link {
   color: black;
   font-size: 20px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 18px;
   font-weight: 700;
 }
-.nav-item :hover {
+.red :hover {
   color: #004a87;
   border-bottom: 5px solid #f2051c;
 }
@@ -161,18 +195,18 @@ header.scrolled {
 .card-title {
   color: #004a87;
   font-weight: bold;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .text-header h2 {
   color: #004a87;
   font-weight: bold;
   font-size: 50px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .title h1 {
   font-size: 30px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bold;
   color: #004a87;
 }
