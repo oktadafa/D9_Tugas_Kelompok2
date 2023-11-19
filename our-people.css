@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+/* Stil awal navbar */
+header {
+  background-color: #fff;
+  transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+}
+
+/* Stil navbar saat di-scroll */
+header.scrolled {
+  background-color: rgba(0, 74, 135, 0.1); /* Ganti dengan warna atau efek blur yang diinginkan */
+  backdrop-filter: blur(10px); /* Ganti dengan tingkat blur yang diinginkan */
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 700;
+}
+.navbar-nav .nav-link:hover {
+  color: #004a87;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid rgb(0, 74, 135); /* Ganti dengan kode warna teks saat dihover yang diinginkan */
+}
+/* .navbar-nav .first-navbar{
+  color: #004a87;
+} */
+.footer {
+  margin-top: auto;
+}
+.footer-about h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+.footer-link h6 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.footer-widget ul li {
+  list-style-type: none;
+  font-family: 'Poppins';
+}
+.footer-widget li {
+  margin-bottom: 20px;
+}
+.footer-widget a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+.footer-widget a:hover {
+  color: #004a87;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #004a87;
+}
+.icon-social i {
+  font-size: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.icon-social i:hover {
+  color: #004a87;
+  border-bottom: 2px solid #004a87;
+}
+
+.footer-copyright-text {
+  background-color: #004a87;
+  padding: 20px;
+  font-family: 'Poppins';
+  color: white;
+}
+
+.img-top-1,
+.img-top-2 {
+  overflow: hidden;
+  height: 50vh;
+  margin-top: 100px;
+}
+.img-top-2 img {
+  width: 100%;
+  object-fit: cover;
+  height: 620px;
+}
+.img-top-1 img {
+  width: 100%;
+  object-fit: cover;
+  height: 520px;
+}
+.carousel-caption {
+  background-color: rgba(8, 8, 8, 0.3); /* Warna gelap dengan tingkat transparansi 0.5 (sesuaikan dengan preferensi Anda) */
+  backdrop-filter: blur(4px); /* Efek blur, sesuaikan dengan keinginan Anda */
+  padding: 5px;
+}
+
+.content {
+  flex: 1;
+}
+.card {
+  background-color: transparent;
+  border: none;
+}
+.nav-item .nav-link {
+  color: black;
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 700;
+}
+.nav-item :hover {
+  color: #004a87;
+  border-bottom: 5px solid #f2051c;
+}
+.nav-item .first-navbar {
+  color: #004a87;
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  height: 250px;
+}
+.card-img {
+  overflow: hidden;
+  height: 50vh;
+}
+
+.card-body .btn-detail {
+  background-color: #004a87;
+  color: white;
+}
+.card-body .btn-detail:hover {
+  background-color: #377ab0;
+  color: white;
+}
+.card-content {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.card-img-top:hover {
+  background-color: #92c4f6;
+  cursor: pointer;
+}
+
+.card-title {
+  color: #004a87;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+
+.text-header h2 {
+  color: #004a87;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: 'Poppins';
+}
+.title h1 {
+  font-size: 30px;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #004a87;
+}

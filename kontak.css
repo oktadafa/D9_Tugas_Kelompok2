@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Stil awal navbar */
+header {
+  background-color: #fff;
+  transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+}
+
+/* Stil navbar saat di-scroll */
+header.scrolled {
+  background-color: rgba(0, 74, 135, 0.1);  /* Ganti dengan warna atau efek blur yang diinginkan */
+  backdrop-filter: blur(10px); /* Ganti dengan tingkat blur yang diinginkan */
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #004a87;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+  width: 100%;
+  /* Ganti dengan kode warna teks saat dihover yang diinginkan */
+}
+
+.navbar-nav .first-navbar {
+  color: #004a87;
+  position: relative;
+}
+
+.navbar-nav .first-navbar::before {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+  background-color: #004a87;
+}
+.content{
+  flex: 1;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  margin-top: 100px;
+}
+.footer-about h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+.footer-link h6 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.footer-widget ul li {
+  list-style-type: none;
+  font-family: "Poppins";
+}
+.footer-widget li {
+  margin-bottom: 20px;
+}
+.footer-widget a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.footer-widget a:hover {
+  color: #004a87;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #004a87;
+}
+.icon-social i {
+  font-size: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.icon-social i:hover {
+  color: #004a87;
+  border-bottom: 2px solid #004a87;
+}
+
+.footer-copyright-text {
+  background-color: #004a87;
+  padding: 20px;
+  font-family: "Poppins";
+  color: white;
+}
+
+.img-top {
+  overflow: hidden;
+  height: 50vh;
+  margin-top: 100px;
+}
+
+.img-top img {
+  width: 100%;
+  object-fit: cover;
+  height: 620px;
+}
+
+/* .img-top img{
+  width: 100%;
+  background-size: cover;
+} */

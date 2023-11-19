@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Astra Otoparts | Hubungi Kami</title>
+    <link rel="shortcut icon" href="img/Logo-favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link rel="stylesheet" href="kontak.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      h1,
+      p,
+      a {
+        font-family: "Poppins";
+      }
+      .header {
+        width: 100%;
+        position: relative;
+        background-image: url(img/astra.jpg);
+        height: 408px;
+        background-size: cover;
+        z-index: 0;
+      }
+
+      .header::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        z-index: 1;
+      }
+
+      .header .content {
+        position: absolute;
+        z-index: 2;
+      }
+
+      label::after {
+        content: "*";
+        color: red;
+      }
+      label {
+        color: #004a87;
+      }
+      input {
+        border: 1px solid #004a87;
+      }
+      .btn {
+        background-color: #004a87;
+      }
+      h1 {
+        color: #004a87;
+      }
+      .text-message {
+        color: #004a87;
+      }
+      .alamat {
+        background-image: url(img/download.jpg);
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        height: 600px;
+      }
+      .alamat::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        z-index: 1;
+      }
+      .alamat .box-alamat {
+        z-index: 2;
+        position: relative;
+        background-color: #004a87;
+      }
+      .body {
+        margin-top: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+          <img
+            class="navbar-brand"
+            src="https://www.astra-otoparts.com/Content/images/logo.png"
+            alt="logo_astra"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar-list"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 mt-3 gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="our-people.html">Struktur Organisasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Produk & layanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link first-navbar" href="kontak.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="body container-fluid">
+      <div class="header d-flex align-items-center justify-content-center">
+        <div class="content">
+          <h1 class="text-light">Hubungi Kami</h1>
+        </div>
+      </div>
+
+      <!-- <div class="text text-light">
+        <h1 class="text-center">Hubungi Kami</h1>
+      </div> -->
+      <!-- <div class="back-img"></div> -->
+    </div>
+
+    <div class="content p-5 d-flex flex-wrap justify-content-around">
+      <div class="col-12 d-flex justify-content-center mb-5 p-5">
+        <img
+          src="https://www.astra-otoparts.com/Content/images/logo-lg.png"
+          width="25%"
+          alt="astra Otoparts logo"
+        />
+      </div>
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <h1 class="text-message">
+          Tinggalkan Pesan <br />
+          Kamu Disini
+        </h1>
+      </div>
+      <div class="col-md-6 p-5 shadow-lg rounded">
+        <form name="submit-to-google-sheet">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              required
+              name="email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              required
+              name="nama"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subjek</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              required
+              name="subjek"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="floatingTextarea2" class="form-label">Pesan</label>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 100px"
+                required
+                name="message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary btn-send" type="submit">
+              Kirim
+            </button>
+
+            <button
+              class="btn btn-primary btn-load d-none"
+              type="button"
+              disabled
+            >
+              <span
+                class="spinner-border spinner-border-sm"
+                aria-hidden="true"
+              ></span>
+              <span role="status">Loading...</span>
+            </button>
+          </div>
+          <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        </form>
+      </div>
+
+      <div class="alamat col-md-12 p-5 mt-5 d-flex align-items-center">
+        <div class="box-alamat p-5 rounded-4 bg-light">
+          <h1 class="text-center">Kantor Kami</h1>
+          <p class="mt-4">
+            <b> PT. ASTRA OTOPARTS Tbk </b><br />
+            Jl. Raya Pegangsaan Dua Km. 2,2 <br />
+            Kelapa Gading - Jakarta 14250 Indonesia
+          </p>
+          <p>
+            <b>Telephone : </b><br />
+            (021) 460 3550 / 460 7025
+          </p>
+          <p><b>Fax : </b><br />(021) 460 3563 / 460 7009</p>
+          <a
+            href="https://maps.app.goo.gl/JuyTHZMru6FmNYGb9"
+            class="btn btn-primary"
+            >Dapatkan Petunjuk Arah</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="footer-logo mb-3">
+							<img src="https://www.astra-otoparts.com/Content/images/logo.png" alt="logo_astra" />
+						</div>
+						<div class="footer-about">
+							<h5>Tanudiredja, Wibasana, Rintis & Rekan</h5>
+							<p>Anggota jaringan firma PricewaterhouseCoopers</p>
+						</div>
+						<div class="footer-about">
+							<h5>Address</h5>
+							<p>Plaza 89, Jl. H. R. Rusuna Said Kav. X-7 No 6 Jakarta 12940 Indonesia PO Box 2473 JKP 10001</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="footer-link mb-3 ms-5">
+							<h6>Links</h6>
+						</div>
+						<div class="footer-widget ms-5">
+							<ul class="ps-0">
+								<li><a href="">Beranda</a></li>
+								<li><a href="">Tentang Kami</a></li>
+								<li><a href="">Struktur Organisasi</a></li>
+								<li><a href="">Produk & layanan</a></li>
+								<li><a href="">Kontak</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 ms-0">
+						<div class="footer-link mb-3">
+							<h6>Hubungi Kami</h6>
+						</div>
+						<div class="footer-widget mb-3">
+							<h6>Telephone</h6>
+							<a href="">(021) 521 2901</a>
+						</div>
+						<div class="footer-widget mb-3">
+							<h6>Fax</h6>
+							<a href="">(021) 529 05555 / 529 050505</a>
+						</div>
+						<div class="footer-widget mt-3">
+							<h6>Website</h6>
+							<a href="https://www.astra-otoparts.com/">https://www.astra-otoparts.com/</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="footer-link mb-3">
+							<h6>Social Media</h6>
+						</div>
+						<div class="footer-widget">
+							<div class="icon-social">
+								<i class="bi bi-facebook"></i>
+								<i class="bi bi-instagram"></i>
+								<i class="bi bi-linkedin"></i>
+								<i class="bi bi-twitter-x"></i>
+								<i class="bi bi-youtube"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr />
+			</div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="footer-copyright-text">
+            <p>
+              &copy; 2018 PT Astra Otoparts Tbk. Seluruh hak cipta dilindungi
+              undang-undang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwAu8SoMQDNx59ql_b0UC9vMiWoUJYvjF5gkhLZFf09XE4y_dmfLtonvC7WJ6Q7_heffQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const btnsend = document.querySelector(".btn-send");
+        const btnload = document.querySelector(".btn-load");
+
+        btnsend.classList.toggle("d-none");
+        btnload.classList.toggle("d-none");
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            if (response.ok) {
+              Swal.fire({
+                icon: "success",
+                title: "Pesan Terkirim",
+              });
+
+              btnsend.classList.toggle("d-none");
+              btnload.classList.toggle("d-none");
+              form.reset();
+            }
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
